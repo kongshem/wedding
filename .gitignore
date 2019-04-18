@@ -4,3 +4,6 @@ dist
 *.log
 yarn.lock
 .idea
+npm-debug.log
+.DS_Store
+/*.env
