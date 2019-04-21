@@ -19,7 +19,7 @@ export default class SaveTheDate extends React.Component{
                     Hold av datoen
                   </div>
                   <div className="innhold first">
-                      Vi gifter oss helgen 26-28 juni 2020.
+                      Vi gifter oss helgen 26-28 juni 2020
                   </div>
                   <div className="innhold">
                       Invitasjon vil komme senere
