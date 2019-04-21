@@ -53,8 +53,8 @@ export default class App extends React.Component{
           {/*<Lognvik />*/}
           {/*<PracticalInfo />*/}
         {/*</ReactPageScroller>*/}
-        {/*<SaveTheDate />*/}
-        <SaveTheDatePicture/>
+        <SaveTheDate />
+        {/*<SaveTheDatePicture/>*/}
     </React.Fragment>
   }
 }
