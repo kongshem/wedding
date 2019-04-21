@@ -12,7 +12,7 @@ export default class SaveTheDate extends React.Component{
       <div className="content saveTheDate">
           <div className="ramme">
               <div className="left">
-                  <img src={ForlovelseBilde} />
+                  {/*<img src={ForlovelseBilde} />*/}
               </div>
               <div className="right">
                   <div className="overskrift">

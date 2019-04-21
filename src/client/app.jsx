@@ -7,7 +7,6 @@ import Main from "./components/main.jsx";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import './css/app.less';
 import KM from "./img/km.png"
-import SaveTheDatePicture from "./components/savethedatepicture";
 
 export default class App extends React.Component{
   constructor(props) {
@@ -54,7 +53,6 @@ export default class App extends React.Component{
           {/*<PracticalInfo />*/}
         {/*</ReactPageScroller>*/}
         <SaveTheDate />
-        {/*<SaveTheDatePicture/>*/}
     </React.Fragment>
   }
 }
