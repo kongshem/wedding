@@ -5,7 +5,8 @@ import PracticalInfo from './components/practicalinfo.jsx';
 import ReactPageScroller from 'react-page-scroller';
 import Main from "./components/main.jsx";
 import ExpandMore from "@material-ui/icons/ExpandMore";
-import './app.less';
+import './css/app.less';
+import KM from "./img/km.png"
 
 export default class App extends React.Component{
   constructor(props) {
@@ -28,25 +29,30 @@ export default class App extends React.Component{
   render() {
 
     return <React.Fragment>
-      <div className="header sticky">
-        <button onClick={() => this.goToPage(0)} className="test">HJEM</button>
-        <button onClick={() => this.goToPage(1)}>SAVE THE DATE</button>
-        <button onClick={() => this.goToPage(2)}>OM LOGNVIK</button>
-        <button onClick={() => this.goToPage(3)}>PRAKTISK INFO</button>
-      </div>
+        {/*<div className="header sticky">
+          <div className="left">
+            <button onClick={() => this.goToPage(0)} className="test">Hjem</button>
+          </div>
+          <div className="center">
+            <button onClick={() => this.goToPage(1)}>SAVE THE DATE</button>
+            <button onClick={() => this.goToPage(2)}>OM LOGNVIK</button>
+          </div>
+        <div className="right"></div>
+      </div>*/}
 
       {/*<Header goToFunc={this.goToPage}/>*/}
-      {this.state.currentPage < 4 &&
+      {/*this.state.currentPage < 3 &&
         <div className="arrow bounce">
           <ExpandMore onClick={() => this.goToPage(this.state.currentPage)} color={"primary"} fontSize={"large"}/>
         </div>
-      }
-      <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
-        <Main />
-        <SaveTheDate />
-        <Lognvik />
-        <PracticalInfo />
-      </ReactPageScroller>
+      */}
+        {/*<ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
+          {/*<Main />*/}
+
+          {/*<Lognvik />*/}
+          {/*<PracticalInfo />*/}
+        {/*</ReactPageScroller>*/}
+      <SaveTheDate />
     </React.Fragment>
   }
 }

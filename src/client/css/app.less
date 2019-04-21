@@ -80,15 +80,6 @@ html, body {
   height: 100%;
 }
 
-.header, .footer {
-  padding: 0 20px;
-  opacity: 0.8;
-  height: 50px;
-  line-height: 50px;
-}
-.test{
-  color:red;
-}
 .content {
   padding: 40px 20px;
 }
@@ -96,6 +87,15 @@ html, body {
 .header {
   background-color: rgba(28, 54, 83, 0.6);
   text-align: center;
+  display: flex;
+  .left{
+    flex:1;
+  }
+  .center{
+  }
+  .right{
+    flex:1;
+  }
 
   button {
     background-color: rgba(28, 54, 83, 0.6);
@@ -121,29 +121,74 @@ html, body {
   top: 0;
   width: 100%;
   z-index: 100;
-  opacity: 0.8;
 }
 
 .welcome {
   margin-top: 50px;
-  background-image: url("img/forlovese.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100%;
 }
 
 .saveTheDate {
-  background-color: yellow;
-  height: 100%;
+  .ramme{
+    display: flex;
+    border: solid 1px black;
+    margin: auto;
+    .right{
+      flex: 1;
+      border-left: solid 1px black;
+      margin: 5%;
+      .overskrift{
+        border-bottom: solid 1px black;
+        margin: 0 5% 0 5%;
+        //color: black;
+        color: #dcab2b;
+        font-family: wedding;
+        font-size: 120px;
+        text-align: center;
+      }
+      .innhold{
+        margin-top:20px;
+        text-align: center;
+        //color: #dcab2b;
+        color: #414244;
+        margin: 0 10% 0 10%;
+        //color: black;
+        font-family: "Merriweather,Georgia,serif";
+        font-style: normal;
+        font-size:45px;
+      }
+      .first{
+        margin: 2% 10% 0 10%;
+      }
+      .underskrift{
+        padding-top: 20px;
+      }
+    }
+    .left{
+      flex: 1;
+      max-height: 100%;
+      img{
+        width: 60%;
+        height: auto;
+        opacity: 1;
+        margin: 40px 0 40px 20%;
+      }
+    }
+  }
 }
 
 .lognvik {
   background-color: pink;
-  height: 100%;
 }
 
 .practicalInfo {
   background-color: bisque;
-  height: 100%;
+}
+@font-face {
+  font-family: wedding;
+  src: url(../fonts/exmouth_.ttf);
+}
+@font-face {
+  font-family: wedding2;
+  src: url(../fonts/Adinda.ttf);
 }
