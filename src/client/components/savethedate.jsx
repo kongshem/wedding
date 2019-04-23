@@ -1,5 +1,6 @@
 import React from 'react';
-import ForlovelseBilde from "../img/forlovese.jpg";
+import Favorite from "@material-ui/icons/Favorite";
+
 
 export default class SaveTheDate extends React.Component{
 
@@ -29,6 +30,11 @@ export default class SaveTheDate extends React.Component{
                   </div>
               </div>
 
+          </div>
+          <div className="kalender">
+              <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MzdjZmxyYWJkOGpyZXVqaXBmaGN0ZGhpY3Iga29uZ3NoZW0uZW50ZXJ0YWlubWVudEBt&amp;tmsrc=kongshem.entertainment%40gmail.com">
+                  Hold av datoen i Google kalender</a>
+              <Favorite />
           </div>
       </div>
     )
