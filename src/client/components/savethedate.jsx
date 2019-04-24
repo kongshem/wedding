@@ -1,6 +1,6 @@
 import React from 'react';
 import Favorite from "@material-ui/icons/Favorite";
-
+import LognvikEmblem from '../img/favicon.jpg';
 
 export default class SaveTheDate extends React.Component{
 
@@ -13,7 +13,6 @@ export default class SaveTheDate extends React.Component{
       <div className="content saveTheDate">
           <div className="ramme">
               <div className="left">
-                  {/*<img src={ForlovelseBilde} />*/}
               </div>
               <div className="right">
                   <div className="overskrift">
