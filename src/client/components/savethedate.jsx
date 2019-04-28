@@ -9,6 +9,8 @@ export default class SaveTheDate extends React.Component{
   }
 
   render(){
+    console.log('Du måtte snoke ja...');
+    console.log('https://memegenerator.net/img/instances/75552387.jpg');
     return(
       <div className="content saveTheDate">
           <div className="ramme">
