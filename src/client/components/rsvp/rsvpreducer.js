@@ -2,14 +2,31 @@
 import * as actions from '../../redux/actions';
 
 const initialState = {
-    test: "test"
+    feedback: "",
+    uploading: false,
+    success: false,
+    failed: false,
 };
 
-const rsvpreducer = (state = [], action) => {
+const rsvpreducer = (state = initialState, action) => {
     switch (action.type) {
-        case actions.TEST:
+        case actions.RSVP_STARTED:
             return Object.assign({}, state, {
-                test: "HEI"
+                uploading: true,
+                success: false,
+                failed: false
+            });
+        case actions.RSVP_SUCCESS:
+            return Object.assign({}, state, {
+                uploading: false,
+                success: true,
+                failed: false
+            });
+        case actions.RSVP_FAILED:
+            return Object.assign({}, state, {
+                uploading: false,
+                success: false,
+                failed: true
             });
         default:
             return state

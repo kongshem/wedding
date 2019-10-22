@@ -17,7 +17,7 @@ import KM from "./img/km.png";
     return (
         <div>
           <SaveTheDate />
-          <Rsvp />
+          <Rsvp onSubmit={this.handleSubmit} />
         </div>
     )
   }
