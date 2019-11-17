@@ -6,7 +6,7 @@ export default class Main extends React.Component{
   render(){
     return(
       <div className="content welcome">
-        <img src={ForlovelseBilde} />
+        <img src={ForlovelseBilde} height={300} width={300}  />
       </div>
     )
   }
