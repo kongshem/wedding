@@ -15,14 +15,16 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <div className="left">
+                    <Link to="/">Kathrine & Magnus</Link>
                 </div>
                 <div className="center">
-                    <Link to="/praktisk">PRAKTISK INFO</Link>
-                    <Link to="/rsvp">RSVP</Link>
-                    <Link to="/agenda">AGENDA</Link>
-                    <Link to="/lognvik">OM LOGNVIK</Link>
+
                 </div>
                 <div className="right">
+                    <Link to="/praktisk">Praktisk info</Link>
+                    <Link to="/rsvp">Rsvp</Link>
+                    <Link to="/agenda">Agenda</Link>
+                    <Link to="/lognvik">Om Lognvik</Link>
                 </div>
             </div>
         )

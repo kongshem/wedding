@@ -1,12 +1,13 @@
 import React from 'react';
-import ForlovelseBilde from '../img/forlovese.jpg';
+import ForsideBilde from '../img/forside.jpg';
 
 export default class Main extends React.Component{
 
   render(){
+
     return(
-      <div className="content welcome">
-        <img src={ForlovelseBilde} height={300} width={300}  />
+      <div className="welcome">
+        <img src={ForsideBilde} id={"mainBilde"} align={"center"} />
       </div>
     )
   }
