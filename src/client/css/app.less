@@ -184,10 +184,57 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    .heading{
+      font-family: wedding2;
+      color: #e8ca6f;
+      font-size: 5vw;
+    }
   }
+  .theform{
+    width: 100%;
+    padding: 0 15% 0 15%;
+    .rsvp-form{
+      display: flex;
+      width: 100%;
+      .right {
+        flex:1;
+        margin-left: 10%;
+      }
+      .left{
+        flex:1;
+        input[type=text]{
+          width: 100%;
+          font-size:17px;
+        }
+      }
+      .all{
+        flex:0;
+      }
+    }
+  }
+
   .form-group{
     display: flex;
     flex-direction: row;
+    padding-bottom: 25px;
+    padding-top:5px;
+    .col {
+      flex:1;
+    }
+    textarea{
+      width: 100%;
+      height: 4vw;
+      border-radius: 5px;
+      border: solid 1px lightgrey;
+    }
+    select {
+      width: 100%;
+      font-size:17px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: solid 1px lightgrey;
+    }
     .titleLabel {
       flex: none;
       display: block;
@@ -201,9 +248,35 @@ html, body {
       flex:none;
       display: block;
     }
+    input[type=text] {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: solid 1px lightgrey;
+    }
+    .error{
+      color:red;
+    }
+    button{
+      background-color: #dcab2b;
+      color: black;
+      font-size: 20px;
+      border: solid 1px #dcab2b;
+      width: 100%;
+      border-radius: 5px;
+    }
+    button:hover{
+      width: 100%;
+      font-size: 21px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: solid 1px #dcab2b;
+
+    }
   }
 }
 #mainBilde{
   width: 100%;
   //padding: 0% 5% 5% 5%;
 }
+

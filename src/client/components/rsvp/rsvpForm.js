@@ -1,54 +1,81 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
-const renderField = ({ input, label, type, meta: { touched, error } }) => (
+const renderField = ({ input, label, placeholder, type, meta: { touched, error } }) => (
     <div className="form-group">
-        <label className="titleLabel">{label}</label>
-        <input {...input} placeholder={label} type={type} />
-        {touched && error && <span>{error}</span>}
+        <input {...input} type={type} />
+        {touched && error && <span className={'error'}>{error}</span>}
     </div>
 );
-const renderRadioField = ({ input, label, type, meta:{touched, error}}) => (
+const renderRadioField = ({ input, label, text, type, meta:{touched, error}}) => (
     <div className={"form-group"}>
-        <label className="titleLabel">{label}</label>
-        <input {...input} placeholder={label} type={type}/>
-        {touched && error && <span>{error}</span>}
+        <input {...input} placeholder={label} type={type}/>{text}
+        {touched && error && <span className={'error'}>{error}</span>}
     </div>
 )
-const renderCheckboxField = ({ input, label, type, meta: { touched, error } }) => (
+const renderCheckboxField = ({ input, label, text, type, meta: { touched, error } }) => (
     <div className="form-group">
         <label className="titleLabel">{label}</label>
-        <input {...input} placeholder={label} type={type} />
-        {touched && error && <span>{error}</span>}
+        <input {...input} placeholder={label} type={type} />{text}
+        {touched && error && <span className={'error'}>{error}</span>}
     </div>
 );
+const renderSelectFiled = ({input, label, text, type, meta:{touched, error}}) => {
+    <div className="form-group">
+        <label className="titleLabel">{label}</label>
+        <input {...input} placeholder={label} type={type} />{text}
+        {touched && error && <span className={'error'}>{error}</span>}
+    </div>
+}
 
 const RsvpForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
     return (
-        <form onSubmit={handleSubmit}>
-            <Field name="firstname" component={renderField} type="text" placeholder="Fornavn" label="Fornavn"/>
-            <Field name="lastname" component={renderField} type="text" placeholder="Etternavn" label="Etternavn" />
-            <Field name="phone" component={renderField} type="text" placeholder="Tlf" label="Tlf"/>
-            <Field name="email" component={renderField} type="text" placeholder="E-post" label="E-post"/>
-            <Field name="attend" component={renderRadioField} type="radio" value={"fredag"} label="Kommer fredag"/>
-            <Field name="attend" component={renderRadioField} type="radio" value={"lørdag"} label="Kommer lørdag"/>
-            <Field name="attend" component={renderRadioField} type="radio" value={"ikke"} label="Deltar ikke"/>
-            <Field name="sleepfriday" component={renderCheckboxField} type="checkbox" label="Ønsker overnatting" /> Fredag
-            <Field name="sleepsaturday" component={renderCheckboxField} type="checkbox" /> Lørdag
-            <Field name="noaccomodation" component={renderCheckboxField} type="checkbox" />Jeg ordner overnatting selv
-            <div className="form-group">
+        <form onSubmit={handleSubmit} className={"theform"}>
+            <div className={"rsvp-form"}>
+                <div className={"left"}>
+                    <label className="titleLabel">Fullt navn</label>
+                    <Field name="name" component={renderField} type="text" placeholder="Fullt navn" />
+                    <label className="titleLabel">Tlf</label>
+                    <Field name="phone" component={renderField} type="text" placeholder="Tlf" />
+                    <label className="titleLabel">E-post</label>
+                    <Field name="email" component={renderField} type="text" placeholder="E-post"/>
+                </div>
+                <div className={"right"}>
+                    <label className="titleLabel">Svar</label>
+                    <div className="form-group">
+                        <Field name="attend" component={"select"}>
+                                <option></option>
+                                <option value="fredag">Kommer fredag</option>
+                                <option value="lørdag">Kommer lørdag</option>
+                                <option value="ikke">Kan dessverre ikke komme</option>
+                        </Field>
+                    </div>
+                    <label className="titleLabel">Overnatting</label>
+                    <div className="form-group">
+                        <Field name="accomodation" component={"select"}>
+                            <option></option>
+                            <option value="JA">Ønsker overnatting</option>
+                            <option value="NEI">Jeg ordner overnatting selv</option>
+                        </Field>
+                    </div>
+                </div>
+            </div>
+            <div className={"all"}>
                 <label className="titleLabel">Allergier</label>
-                <Field name="allergies" component="textarea" />
+                <div className="form-group">
+                    <Field name="allergies" component="textarea" />
+                </div>
             </div>
-            <div className="form-group">
+            <div className={"all"}>
                 <label className="titleLabel">Hvilken sang danser du best til?</label>
-                <Field name="song_suggestions" component="textarea" />
+                <div className="form-group">
+                    <Field name="song_suggestions" component="textarea" />
+                </div>
             </div>
             <div className="form-group">
-                <label className="titleLabel"></label>
-                <button type="submit" disabled={pristine || submitting}>Rsvp</button>
-                <button type="button" disabled={pristine || submitting} onClick={reset}>Nullstill</button>
+                <button type="submit" disabled={pristine || submitting}>Send svar</button>
+                {/*<button type="button" disabled={pristine || submitting} onClick={reset}>Nullstill</button>*/ }
             </div>
         </form>
     );

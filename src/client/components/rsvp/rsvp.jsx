@@ -23,16 +23,17 @@ class Rsvp extends React.Component {
         this.validateAndSubmit = this.validateAndSubmit.bind(this);
     }
     validateAndSubmit(values){
-        if(!values.firstname){
-            throw new SubmissionError({firstname: 'Mangler fornavn',_error: 'Feilet!'})
-        } else if(!values.lastname){
-            throw new SubmissionError({lastname: 'Mangler etternavn',_error: 'Feilet!'})
+        console.log(values);
+        if(!values.name){
+            throw new SubmissionError({name: 'Mangler navn',_error: 'Feilet!'})
         } else if (!values.email) {
             throw new SubmissionError({email: 'Vi trenger din epostadresse', _error: 'Feilet!'})
         } else if(!values.email.includes('@')) {
             throw new SubmissionError({email: 'Ugyldig epostadresse', _error: 'Feilet!'})
-        }else if (!values.noaccomodation && !values.sleepfriday && !values.sleepsaturday){
-            throw new SubmissionError({noaccomodation: 'Du må fortelle oss om du trenger overnatting eller ikke', _error: 'Feilet!'})
+        }else if (!values.accomodation){
+            throw new SubmissionError({accomodation: 'Du må fortelle oss om du trenger overnatting eller ikke', _error: 'Feilet!'})
+        } else if (!values.attend){
+                throw new SubmissionError({attend: 'Du må fortelle oss om du vil komme', _error: 'Feilet!'})
         } else {
             console.log("Alt ok med skjemaet!");
             console.log(values);
@@ -43,8 +44,13 @@ class Rsvp extends React.Component {
     render() {
         return (
             <div className="rsvp">
-                <div className={"center"}>
+                {/*<div className={"center"}>
                     <p>Vennligst gi oss ditt svar innen 31. mars 2020. Vi har mulighet til å stille med overnatting i enkle hytter på Lognvik Gård og nabogården for 200kr per pers. Dette kan vippses til Magnus (41565906) eller Kathrine (48222795). Huk av dersom du ønsker dette.</p>
+                </div>*/}
+                <div className={"center"}>
+                    <span className={"heading"}>
+                        RSVP
+                    </span>
                 </div>
                 <div className={"center"}>
                     <RsvpForm onSubmit={this.validateAndSubmit} />
