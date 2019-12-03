@@ -173,8 +173,14 @@ html, body {
 }
 
 .rsvp{
+  background: url(../img/background.jpg) no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
   .center{
     height: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
     display: -webkit-box;
@@ -184,15 +190,17 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     .heading{
       font-family: wedding2;
       color: #e8ca6f;
-      font-size: 5vw;
+      font-size: 8vw;
     }
   }
   .theform{
-    width: 100%;
-    padding: 0 15% 0 15%;
+    width: 100vh;
+    padding: 100px 15% 0 15%;
+    height: 90vh;
     .rsvp-form{
       display: flex;
       width: 100%;
@@ -201,6 +209,7 @@ html, body {
         margin-left: 10%;
       }
       .left{
+        margin-left: 40px;
         flex:1;
         input[type=text]{
           width: 100%;
@@ -210,6 +219,14 @@ html, body {
       .all{
         flex:0;
       }
+    }
+    .textLabel{
+      margin-left: 40px;
+      color: #e8ca6f;
+    }
+    .titleLabel {
+      color:  #e8ca6f;
+      font-size:17px;
     }
   }
 
@@ -226,6 +243,7 @@ html, body {
       height: 4vw;
       border-radius: 5px;
       border: solid 1px lightgrey;
+      margin-left: 40px;
     }
     select {
       width: 100%;
@@ -243,6 +261,7 @@ html, body {
       font-size: 15px;
       text-align: right;
       margin-right: 14px;
+      margin-left: 40px;
     }
     .body{
       flex:none;
@@ -258,12 +277,13 @@ html, body {
       color:red;
     }
     button{
-      background-color: #dcab2b;
+      background-color: #e8ca6f;
       color: black;
       font-size: 20px;
       border: solid 1px #dcab2b;
       width: 100%;
       border-radius: 5px;
+      margin-left: 40px;
     }
     button:hover{
       width: 100%;
@@ -279,4 +299,3 @@ html, body {
   width: 100%;
   //padding: 0% 5% 5% 5%;
 }
-

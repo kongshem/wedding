@@ -62,13 +62,13 @@ const RsvpForm = props => {
                 </div>
             </div>
             <div className={"all"}>
-                <label className="titleLabel">Allergier</label>
+                <label className="titleLabel textLabel">Allergier</label>
                 <div className="form-group">
                     <Field name="allergies" component="textarea" />
                 </div>
             </div>
             <div className={"all"}>
-                <label className="titleLabel">Hvilken sang danser du best til?</label>
+                <label className="titleLabel textLabel">Hvilken sang danser du best til?</label>
                 <div className="form-group">
                     <Field name="song_suggestions" component="textarea" />
                 </div>

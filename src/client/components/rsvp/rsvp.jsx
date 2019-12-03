@@ -44,9 +44,7 @@ class Rsvp extends React.Component {
     render() {
         return (
             <div className="rsvp">
-                {/*<div className={"center"}>
-                    <p>Vennligst gi oss ditt svar innen 31. mars 2020. Vi har mulighet til å stille med overnatting i enkle hytter på Lognvik Gård og nabogården for 200kr per pers. Dette kan vippses til Magnus (41565906) eller Kathrine (48222795). Huk av dersom du ønsker dette.</p>
-                </div>*/}
+
                 <div className={"center"}>
                     <span className={"heading"}>
                         RSVP
@@ -55,6 +53,9 @@ class Rsvp extends React.Component {
                 <div className={"center"}>
                     <RsvpForm onSubmit={this.validateAndSubmit} />
                 </div>
+                {/*<div className={"center"}>
+                    <p>Vennligst gi oss ditt svar innen 31. mars 2020. Vi har mulighet til å stille med overnatting i enkle hytter på Lognvik Gård og nabogården for 200kr per pers. Dette kan vippses til Magnus (41565906) eller Kathrine (48222795). Huk av dersom du ønsker dette.</p>
+                </div>*/}
             </div>
         );
     }
