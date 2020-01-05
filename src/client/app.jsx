@@ -41,7 +41,7 @@ import {
                         <Lognvik />
                     </Route>
                     <Route path="/">
-                        <Rsvp onSubmit={this.handleSubmit} />
+                        <Main />
                     </Route>
                 </Switch>
             </Router>

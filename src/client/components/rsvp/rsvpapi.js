@@ -29,14 +29,11 @@ function success(dispatch) {
 function postToSheets(data){
     const post = 'https://script.google.com/macros/s/AKfycbzeWnDm39-6Gf6B-mo86kSsTut1sWjAvjoeWKAgxXaJrT4xgfc/exec';
     const thedata = {
-        firstname: data.firstname,
-        lastname: data.lastname,
+        name: data.name,
         phone: data.phone,
         email: data.email,
-        participate_friday: data.attendfriday,
-        accomodation_friday: data.sleepfriday,
-        accomodation_saturday: data.sleepsaturday,
-        no_accomodation: data.noaccomodation,
+        attend: data.attend,
+        accomodation: data.accomodation,
         allergies: data.allergies,
         song_suggestions: data.song_suggestions,
     };

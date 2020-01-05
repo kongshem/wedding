@@ -8,6 +8,9 @@ import {saveRsvpDispatch} from "./rsvpapi.js";
 function mapStateToProps(state) {
     return {
         test: state.rsvpreducer.test,
+        uploading: state.rsvpreducer.uploading,
+        success: state.rsvpreducer.success,
+        failed: state.rsvpreducer.failed,
     }
 }
 const mapDispatchToProps = (dispatch) => {
@@ -53,7 +56,7 @@ class Rsvp extends React.Component {
                     </span>
                 </div>
                 <div className={"center"}>
-                    <RsvpForm onSubmit={this.validateAndSubmit} />
+                    <RsvpForm onSubmit={this.validateAndSubmit} uploading={this.props.uploading} />
                 </div>
             </div>
         );
