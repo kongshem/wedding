@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 const renderField = ({ input, label, placeholder, type, meta: { touched, error } }) => (
     <div className="form-group">
@@ -7,26 +8,6 @@ const renderField = ({ input, label, placeholder, type, meta: { touched, error }
         {touched && error && <span className={'error'}>{error}</span>}
     </div>
 );
-const renderRadioField = ({ input, label, text, type, meta:{touched, error}}) => (
-    <div className={"form-group"}>
-        <input {...input} placeholder={label} type={type}/>{text}
-        {touched && error && <span className={'error'}>{error}</span>}
-    </div>
-)
-const renderCheckboxField = ({ input, label, text, type, meta: { touched, error } }) => (
-    <div className="form-group">
-        <label className="titleLabel">{label}</label>
-        <input {...input} placeholder={label} type={type} />{text}
-        {touched && error && <span className={'error'}>{error}</span>}
-    </div>
-);
-const renderSelectFiled = ({input, label, text, type, meta:{touched, error}}) => {
-    <div className="form-group">
-        <label className="titleLabel">{label}</label>
-        <input {...input} placeholder={label} type={type} />{text}
-        {touched && error && <span className={'error'}>{error}</span>}
-    </div>
-}
 
 const RsvpForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
@@ -74,8 +55,15 @@ const RsvpForm = props => {
                 </div>
             </div>
             <div className="form-group">
-                <button type="submit" disabled={pristine || submitting}>Send svar</button>
-                {/*<button type="button" disabled={pristine || submitting} onClick={reset}>Nullstill</button>*/ }
+                <button type="submit" disabled={pristine || submitting}>
+                    {!props.uploading &&
+                        "Send svar"
+                    }
+                    {props.uploading &&
+                        <CircularProgress />
+                    }
+                </button>
+
             </div>
         </form>
     );

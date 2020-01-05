@@ -26,6 +26,9 @@ html, body {
 .content {
   padding: 40px 20px;
 }
+.content2 {
+  padding: 0px 20px;
+}
 
 .header {
   //background-color: rgba(28, 54, 83, 0.6);
@@ -55,7 +58,6 @@ html, body {
     justify-content: space-evenly;
     align-items: center;
     a {
-      //background-color: rgba(28, 54, 83, 0.6);
       color: black;
       border: none;
       text-decoration: none;
@@ -155,13 +157,27 @@ html, body {
     }
   }
 }
-
+.agenda{
+  text-align: center;
+  .heading{
+    font-family: wedding2;
+    color: #e8ca6f;
+    font-size: 6vw;
+  }
+}
 .lognvik {
-  background-color: pink;
+  @media only screen and (min-width: 1200px) {
+    .paragraf{
+      display: flex;
+    }
+  }
+  #lognvik2{
+    width: 100%;
+    max-width: 600px;
+  }
 }
 
 .practicalInfo {
-  background-color: bisque;
 }
 @font-face {
   font-family: wedding;

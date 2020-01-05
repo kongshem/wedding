@@ -8,6 +8,9 @@ import {saveRsvpDispatch} from "./rsvpapi.js";
 function mapStateToProps(state) {
     return {
         test: state.rsvpreducer.test,
+        uploading: state.rsvpreducer.uploading,
+        success: state.rsvpreducer.success,
+        failed: state.rsvpreducer.failed,
     }
 }
 const mapDispatchToProps = (dispatch) => {
@@ -23,7 +26,6 @@ class Rsvp extends React.Component {
         this.validateAndSubmit = this.validateAndSubmit.bind(this);
     }
     validateAndSubmit(values){
-        console.log(values);
         if(!values.name){
             throw new SubmissionError({name: 'Mangler navn',_error: 'Feilet!'})
         } else if (!values.email) {
@@ -35,8 +37,6 @@ class Rsvp extends React.Component {
         } else if (!values.attend){
                 throw new SubmissionError({attend: 'Du må fortelle oss om du vil komme', _error: 'Feilet!'})
         } else {
-            console.log("Alt ok med skjemaet!");
-            console.log(values);
             this.props.submit(values);
         }
     }
@@ -51,7 +51,7 @@ class Rsvp extends React.Component {
                     </span>
                 </div>
                 <div className={"center"}>
-                    <RsvpForm onSubmit={this.validateAndSubmit} />
+                    <RsvpForm onSubmit={this.validateAndSubmit} uploading={this.props.uploading} />
                 </div>
                 {/*<div className={"center"}>
                     <p>Vennligst gi oss ditt svar innen 31. mars 2020. Vi har mulighet til å stille med overnatting i enkle hytter på Lognvik Gård og nabogården for 200kr per pers. Dette kan vippses til Magnus (41565906) eller Kathrine (48222795). Huk av dersom du ønsker dette.</p>
