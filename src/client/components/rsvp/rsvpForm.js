@@ -11,7 +11,6 @@ const renderField = ({ input, label, placeholder, type, meta: { touched, error }
 
 const RsvpForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
-    console.log(props.uploading);
     return (
         <form onSubmit={handleSubmit} className={"theform"}>
             <div className={"rsvp-form"}>

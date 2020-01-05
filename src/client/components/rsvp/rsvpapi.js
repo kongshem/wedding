@@ -4,11 +4,8 @@ import {reset} from 'redux-form';
 export function saveRsvpDispatch(data) {
     return (dispatch) => {
         dispatch({type: actions.RSVP_STARTED});
-        console.log("APIIIII med dispatch!");
-        console.log(data);
         postToSheets(data)
             .done(function (resp, textStatus, jqXHR) {
-                console.log(resp);
                 success(dispatch);
             })
             .fail((jqXHR, textStatus, errorThrown) => {

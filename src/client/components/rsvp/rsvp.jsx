@@ -26,7 +26,6 @@ class Rsvp extends React.Component {
         this.validateAndSubmit = this.validateAndSubmit.bind(this);
     }
     validateAndSubmit(values){
-        console.log(values);
         if(!values.name){
             throw new SubmissionError({name: 'Mangler navn',_error: 'Feilet!'})
         } else if (!values.email) {
@@ -38,8 +37,6 @@ class Rsvp extends React.Component {
         } else if (!values.attend){
                 throw new SubmissionError({attend: 'Du må fortelle oss om du vil komme', _error: 'Feilet!'})
         } else {
-            console.log("Alt ok med skjemaet!");
-            console.log(values);
             this.props.submit(values);
         }
     }
