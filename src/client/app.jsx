@@ -25,8 +25,7 @@ import {
 
     return (
         <div>
-            <SaveTheDate />
-            {/*<Router>
+            <Router>
                 <Header />
                 <Switch>
                     <Route path="/praktisk">
@@ -45,7 +44,7 @@ import {
                         <Main />
                     </Route>
                 </Switch>
-            </Router>*/}
+            </Router>
         </div>
     )
   }
