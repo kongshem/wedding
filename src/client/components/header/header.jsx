@@ -1,4 +1,5 @@
 import React from 'react';
+import { slide as Menu } from 'react-burger-menu'
 import {
     BrowserRouter as Router,
     Switch,
@@ -20,11 +21,13 @@ class Header extends React.Component {
                 <div className="center">
                 </div>
                 <div className="right">
-                    <Link to="/rsvp">Kommer du?</Link>
-                    <Link to="/praktisk">Praktisk info</Link>
-                    <Link to="/agenda">Bryllupet</Link>
-                    <Link to="/wishlist">Ønskeliste</Link>
-                    <Link to="/lognvik">Om Lognvik</Link>
+                    <Menu right>
+                      <Link to="/rsvp">Kommer du?</Link>
+                      <Link to="/praktisk">Praktisk info</Link>
+                      <Link to="/agenda">Bryllupet</Link>
+                      <Link to="/wishlist">Ønskeliste</Link>
+                      <Link to="/lognvik">Om Lognvik</Link>
+                    </Menu>
                 </div>
             </div>
         )
