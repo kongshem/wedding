@@ -1,5 +1,6 @@
 import React from 'react';
 import Lognvik from './components/lognvik.jsx';
+import WishList from './components/wishlist.jsx';
 import SaveTheDate from './components/savethedate.jsx';
 import Rsvp from './components/rsvp/rsvp.jsx';
 import Main from "./components/main.jsx";
@@ -39,6 +40,9 @@ import {
                     </Route>
                     <Route path="/lognvik">
                         <Lognvik />
+                    </Route>
+                    <Route path="/wishlist">
+                        <WishList />
                     </Route>
                     <Route path="/">
                         <Main />

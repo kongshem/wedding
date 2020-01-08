@@ -18,12 +18,12 @@ class Header extends React.Component {
                     <Link to="/">Kathrine & Magnus</Link>
                 </div>
                 <div className="center">
-
                 </div>
                 <div className="right">
+                    <Link to="/rsvp">Kommer du?</Link>
                     <Link to="/praktisk">Praktisk info</Link>
-                    <Link to="/rsvp">Rsvp</Link>
-                    <Link to="/agenda">Agenda</Link>
+                    <Link to="/agenda">Bryllupet</Link>
+                    <Link to="/wishlist">Ønskeliste</Link>
                     <Link to="/lognvik">Om Lognvik</Link>
                 </div>
             </div>
