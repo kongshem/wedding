@@ -46,9 +46,6 @@ class Rsvp extends React.Component {
             <div className="rsvp">
 
                 <div className={"center"}>
-                    <span className={"heading"}>
-                        RSVP
-                    </span>
                 </div>
                 <div className={"center"}>
                     <RsvpForm onSubmit={this.validateAndSubmit} uploading={this.props.uploading} />

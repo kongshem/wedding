@@ -125,7 +125,7 @@ html, body {
       }
     }
   }
-  margin: 2% 2% 2% 2%;
+  margin: 2% 2% 0% 2%;
 }
 .std_pic{
   img{
@@ -231,11 +231,6 @@ html, body {
 }
 
 .rsvp{
-  background: url(../img/background.jpg) no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
   .center{
     height: 100%;
     width: 100%;
@@ -257,8 +252,12 @@ background-size: cover;
   }
   .theform{
     width: 100vh;
-    padding: 100px 15% 0 15%;
-    height: 90vh;
+    @media only screen and (min-width: 450px) {
+      padding: 5% 15% 0 15%;
+    }
+    @media only screen and (max-width: 450px) {
+      padding: 10% 15% 0 15%;
+    }
     .rsvp-form{
       display: flex;
       width: 100%;
@@ -267,7 +266,6 @@ background-size: cover;
         margin-left: 10%;
       }
       .left{
-        margin-left: 40px;
         flex:1;
         input[type=text]{
           width: 100%;
@@ -279,11 +277,8 @@ background-size: cover;
       }
     }
     .textLabel{
-      margin-left: 40px;
-      color: #e8ca6f;
     }
     .titleLabel {
-      color:  #e8ca6f;
       font-size:17px;
     }
   }
@@ -301,7 +296,7 @@ background-size: cover;
       height: 4vw;
       border-radius: 5px;
       border: solid 1px lightgrey;
-      margin-left: 40px;
+      height: auto;
     }
     select {
       width: 100%;
@@ -341,7 +336,6 @@ background-size: cover;
       border: solid 1px #dcab2b;
       width: 100%;
       border-radius: 5px;
-      margin-left: 40px;
     }
     button:hover{
       width: 100%;
@@ -404,7 +398,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 2.5em 0 0;
   font-size: 1.15em;
   overflow: hidden !important;
-  height: 50% !important;
 }
 
 /* Morph shape necessary with bubble or elastic */

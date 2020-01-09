@@ -9,9 +9,6 @@ class Agenda extends React.Component{
     render(){
         return(
             <div className="content2 agenda">
-                <span className={"heading"}>
-                        3 dager til ende
-                </span>
                 <h3>Fredag 26. juni</h3>
                     <p>18:00 - ut kvelden: Grilling og hygge ved Fjellstua</p>
                 <h3>Lørdag 27. juni</h3>
