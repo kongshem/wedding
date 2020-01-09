@@ -27,7 +27,7 @@ html, body {
   padding: 40px 20px;
 }
 .content2 {
-  padding: 0px 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 .header {
@@ -200,12 +200,17 @@ html, body {
   }
 }
 .agenda{
-  text-align: center;
-  .heading{
-    font-family: wedding2;
-    color: #e8ca6f;
-    font-size: 6vw;
+  @media only screen and (min-width: 450px) {
+    display: flex;
+    align-items: flex-start;
+    img{
+      width: 50%;
+    }
+    .info{
+      margin:auto;
+    }
   }
+  text-align: center;
 }
 .lognvik {
   @media only screen and (min-width: 1200px) {
