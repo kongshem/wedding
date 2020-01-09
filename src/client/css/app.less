@@ -61,9 +61,10 @@ html, body {
       color: black;
       border: none;
       text-decoration: none;
-      font-size: 2.5vw;
+      font-size: 3.5vw;
       font-family: "Times New Roman", serif;
       flex-wrap: nowrap;
+      padding: 1vw;
     }
 
     a:hover {
@@ -336,11 +337,9 @@ background-size: cover;
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+  position: relative;
+  width: 6vw;
+  height: 6vw;
 }
 
 /* Color/shape of burger icon bars */
@@ -378,7 +377,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background-color: white;
   opacity: 0.8;
-  padding: 2.5em 1.5em 0;
+  padding: 2.5em 0 0;
   font-size: 1.15em;
 }
 
@@ -397,8 +396,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
   display: inline-block;
 }
+.bm-item:hover{
+  cursor: pointer;
+  color: #dcab2b;
+}
 
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+  width: 0px !important;
 }

@@ -3,9 +3,10 @@
 
 ###Installasjon
 - npm install
-- npm run client (hot-reload development)
+- npm run dev (hot-reload development)
+- npm run client (start client)
 - npm run server (start node server)
 
 ###Deploy til heroku:
 - heroku login
-- git push heroku <BRANCH>
+- git push heroku master
