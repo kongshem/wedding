@@ -21,6 +21,13 @@ class Header extends React.Component {
                 <div className="center">
                 </div>
                 <div className="right">
+                    <Link to="/rsvp">Kommer du?</Link>
+                    <Link to="/praktisk">Praktisk info</Link>
+                    <Link to="/agenda">Bryllupet</Link>
+                    <Link to="/wishlist">Ønskeliste</Link>
+                    <Link to="/lognvik">Om Lognvik</Link>
+                </div>
+                <div className="mobile">
                     <Menu right>
                       <Link to="/rsvp">Kommer du?</Link>
                       <Link to="/praktisk">Praktisk info</Link>

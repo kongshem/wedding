@@ -9,7 +9,7 @@ class WishList extends React.Component {
   render() {
       return (
           <div className="whishlist">
-              Ønskeliste!
+              Kommer snart!
           </div>
       )
   }
