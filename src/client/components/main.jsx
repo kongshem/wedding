@@ -16,7 +16,7 @@ export default class Main extends React.Component{
             </p>
               <p>Gå til <Link className="inline-link" to="/rsvp"><i>kommer du?</i></Link> for å svare på om du kommer eller ikke.
               Vi vil veldig gjerne ha svar fra deg om du kommer innen 1. April</p>
-              <p>For mer informasjon om dagen, se <Link className="inline-link" to="/rsvp"><i>praktisk info</i></Link>.</p>
+              <p>For mer informasjon om dagen, se <Link className="inline-link" to="/praktisk"><i>praktisk info</i></Link>.</p>
           </div>
       </div>
     )
