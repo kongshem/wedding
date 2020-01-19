@@ -19,19 +19,20 @@ class PracticalInfo extends React.Component{
           <h3>Ankomst lørdag</h3>
           <p>Dere som kommer på lørdag kan henvende dere ved fjellstua innen kl 12:00 eller etter vielsen for å motta nøkkel og informasjon om hvor dere skal bo</p>
         <h3>Toastmaster</h3>
-          <p>Joachim Kompalla er vår toastmaster for helgen. Dersom du ønsker å si noen ord på den store dagen kan dere ta kontakt med han.</p>
+          <p>Joachim Kompalla er vår eminente toastmaster for helgen. Dersom du ønsker å si noen ord på den store dagen kan dere ta kontakt med han.</p>
           <i>911 81 008</i><br></br>
-          <i>joachim@kompalla.no</i>
+          <i>joachim.kompalla@gmail.com</i>
         <h3>Boforhold</h3>
           <p>Vi har gleden av å tilby alle våre gjester et sted å bo på gården, eller i umiddelbar nærhet. Det er 7 hytter på tunet, Lognvik Fjellstue, hytta "Utsikten", hytta "Vidsyn", hytta i svingen og en hytte på nabogården til Torbjørn Berge. For å gjøre det enkelt har vi satt en pris på 200kr per person for hele oppholdet. Dette kan vippses til Kathrine eller Magnus. Husk å oppgi om dere ønsker dette når dere svarer på invitasjonen.</p>
+          <p>
+              Det blir servert enkel felles frokost lørdag morgen fra kl 09:00 og søndag morgen fra kl 09:00 på Fjellstua. Dersom du har spesielle behov må du ta med dette selv. Det er kjøkken på alle hyttene, så dersom dere ønsker å spise frokost der må dere ordne dette selv.
+          </p>
         <h3>Pakkeliste</h3>
         <ul>
           <li>Sengetøy</li>
           <li>Håndkle</li>
           <li>Mat og drikke til grilling fredag</li>
-          <li>Frokost lørdag og søndag</li>
         </ul>
-
       </div>
     )
   }
