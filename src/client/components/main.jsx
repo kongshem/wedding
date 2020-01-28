@@ -10,7 +10,7 @@ export default class Main extends React.Component{
       <div className="welcome">
           <img src={ForsideBilde} id={"mainBilde"} align={"center"} />
           <div className="info">
-            <h2 className="title">Vi gifter oss!</h2>
+            <h2 className="title">Vi gifter oss!!!</h2>
             <p>Vi gifter oss lørdag 27. juni 2020 og vi vil gjerne dele
               helgen 26-28. juni med deg!
             </p>
