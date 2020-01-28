@@ -1,5 +1,5 @@
 import React from 'react';
-import Bilde from "../img/agenda.jpg";
+import Bilde from "../img/bryllupsbilde_resized.jpg";
 
 class Agenda extends React.Component{
 

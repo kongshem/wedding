@@ -1,5 +1,5 @@
 import React from 'react';
-import ForsideBilde from '../img/forside.jpg';
+import ForsideBilde from '../img/bryllup2_resized.jpg';
 import {Link} from "react-router-dom";
 
 export default class Main extends React.Component{
