@@ -31,9 +31,41 @@ html, body {
   padding: 20px 20px 0px 20px;
 }
 .whishlist{
-  margin-top: 5%;
-  text-align: center;
-  font-size: 16px;
+
+  @media only screen and (min-width: 450px) {
+    display: flex;
+    align-items: flex-start;
+    #mainBilde {
+      width: 50%;
+      height: auto;
+    }
+
+    .info {
+      padding: 0% 2% 0% 2%;
+      p {
+        font-size: 1.8vw;
+        font-family: "Merriweather,Georgia,serif";
+        font-style: normal;
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    #mainBilde {
+      width: 100%;
+      height: auto;
+    }
+
+    .info {
+      padding: 0% 2% 0% 2%;
+
+      p {
+        font-size: 4vw;
+        font-family: "Merriweather,Georgia,serif";
+        font-style: normal;
+      }
+    }
+  }
+  margin: 2% 2% 0% 2%;
 }
 .header {
   text-align: center;

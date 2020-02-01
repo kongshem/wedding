@@ -14,13 +14,10 @@ export default class Lognvik extends React.Component {
                     <img src={Lognvik2} id={"lognvik2"} align={"center"}/>
                     <div className="text">
                         <h2>Lognvik Søndre</h2>
-                        <p>Lognvik Søndre Gård er familien til Magnus sin gård i Rauland i Telemark fra 16- og 17-hundretallet. Gården ble opprinnelig kjøpt av Magnus sin oldefar i år 1933. Etter dette var det Magnus sin farfar som overtok etter sin far. I dag er det faren til Magnus som eier og driver gården.
+                        <p>Lognvik Søndre Gård er familien til Magnus sin gård i Rauland i Telemark fra 16- og 17-hundretallet. Gården ble opprinnelig kjøpt av Magnus sin oldefar i år 1933. I dag er det faren til Magnus som eier og driver gården.
                         </p>
                         <p>
-                            Lognvik betyr "den lugne viken" og har i hele Magnus sitt liv vært hans ferie-paradis. Så fort annledningen har bydd seg har Magnus hatt et ønske om å tilbringe tid på denne fantastiske plassen. Det har vært veldig viktig for Magnus å dele denne plassen med sine nærmeste, så hver sommer de siste 10 årene har det vært en årlig vennetur til Lognvik.
-                        </p>
-                        <p>
-                            Kathrine ble tidlig introdusert for Lognvik og tilbragte sin første påskeferie sammen med Magnus på Lognvik. Med årene har vi brukt mye av ferien vår her oppe, da det tilbyr veldig fine turmuligheter både med og uten ski for oss sammen med Nico.
+                            Lognvik betyr "den lugne viken" og er et ferie-paradis for oss hele året. Vi tilbringer mye tid sammen her opp til å gå fine fjellturer, lange skiturer, jakt og fiske. Når man har en så fantastisk plass som dette i familien så er det også veldig hyggelig å dele den sammen med sine nærmeste, så det blir mange årlige venneturer opp til Lognvik. Vi tror Nico også trives enormt mye her opp med all den plassen han kan boltre seg i, noe vi synes er veldig koselig.
                         </p>
                         <p>
                             Lognvik Søndre er en landbrukseiendom bestående av omtrent 6600 dekar landområde fordelt på dyrket
