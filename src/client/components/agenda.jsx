@@ -16,14 +16,14 @@ class Agenda extends React.Component{
                         <p>18:00 - ut kvelden: Grilling og hygge ved Fjellstua</p>
                         <p><i>Antrekk: Sommerpent</i></p>
                     <h3>Lørdag 27. juni</h3>
-                        <p>09:00 Frokost på Fjellstua</p>
+                        <p>09:00 Frokost på Lognvik Fjellstue</p>
                         <p>13:00 Vielse i Rauland kirke</p>
                         <p><i>Antrekk: Bunad/Smoking/mørk dress</i></p>
                         <p>15:00 Appretiff og fingermat ved Lognvik Fjellstue</p>
                         <p><i>Antrekk: Smoking/mørk dress</i></p>
-                        <p>17:00 Middag på Lognvik Fjellstue</p>
+                        <p>17:00 Middag og fest ved Lognvik Fjellstue</p>
                     <h3>Søndag 28. juni</h3>
-                        <p>09:00-12:00 Frokost</p>
+                        <p>09:00-12:00 Frokost og avreise</p>
                 </div>
             </div>
         )
