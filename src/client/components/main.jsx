@@ -14,9 +14,13 @@ export default class Main extends React.Component{
             <p>Vi gifter oss lørdag 27. juni 2020 og vi vil gjerne dele
               helgen 26-28. juni med deg!
             </p>
-            <p>Vi har skrevet ned litt <Link className="inline-link" to="/praktisk"><i>praktisk informasjon</i></Link> om helgen. Ta en titt på det før du svarer på om du kommer eller ikke.</p>
-              <p>Gå til <Link className="inline-link" to="/rsvp"><i>kommer du</i></Link> for å svare på om du kommer eller ikke.
-              Vi vil veldig gjerne ha svar fra deg om du kommer innen 1. April</p>
+              <p>Vi ønsker å samle familie og gode venner til en bryllupshelg på Lognvik. Vi ser for oss en
+                  uformell fest fredag ettermiddag og kveld, en fin vielse i Rauland kirke med påfølgende
+                  bryllupsmiddag og -fest på Lognvik lørdag. Søndag runder vi av med en rolig frokost.
+              </p>
+              <p>Vi håper du har holdt av helgen. Gå til <Link className="inline-link" to="/rsvp"><i>kommer du</i></Link> for å svare.
+                  Vi vil veldig gjerne høre fra deg innen 1. April.</p>
+              <p>For mer informasjon om dagen, se <Link className="inline-link" to="/praktisk"><i>praktisk informasjon.</i></Link></p>
           </div>
       </div>
     )

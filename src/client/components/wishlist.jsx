@@ -12,10 +12,12 @@ class WishList extends React.Component {
           <div className="whishlist">
               <img src={Bilde} id={"mainBilde"} align={"center"} />
               <div className="info">
-                  <p>Fra gammelt av ble det jo gitt gaver til brudeparet for å kunne etablere et hjem. Vi er så heldig at vi har det meste vi trenger,
-                      og det aller viktisgte er at dere vil feire sammen med oss! Skulle du likevel ønske å gi oss en gave på den store dagen ønsker vi
-                      oss i hovedsak bidrag til vår bryllupsreise som går til Santorini. Gjerne øremerket en aktivitet eller en spesiell opplevelse vi
-                      kan ha der!
+                  <p>Fra gammelt av ble det gjerne gitt gaver til brudeparet for å kunne etablere et hjem. Vi er så
+                      heldig at vi har det meste av det vi trenger, og det aller viktigste for oss er at du vil feire denne
+                      store begivenheten sammen med oss!
+                  </p>
+                  <p>Skulle du likevel ønske å gi oss en gave på den store dagen ønsker vi
+                      oss i hovedsak bidrag til vår bryllupsreise som går til Santorini. Du kan gjerne øremerket en aktivitet eller en spesiell!
                   </p>
 
                   <p>Vi har opprettet en egen bryllupsreise-konto med kontonummer: <i>9801.54.79760</i></p>

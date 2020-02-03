@@ -13,17 +13,17 @@ class Agenda extends React.Component{
                 <img src={Bilde} id={"img"} align={"center"} />
                 <div className="info">
                     <h3>Fredag 26. juni</h3>
-                        <p>18:00 - ut kvelden: Grilling og hygge ved Fjellstua</p>
+                        <p>Kl 18:00 - ut kvelden: Grilling og hygge ved Fjellstua</p>
                         <p><i>Antrekk: Sommerpent</i></p>
                     <h3>Lørdag 27. juni</h3>
-                        <p>09:00 Frokost på Lognvik Fjellstue</p>
-                        <p>13:00 Vielse i Rauland kirke</p>
+                        <p>Kl 09:00 - 10:30: Frokost på Lognvik Fjellstue</p>
+                        <p>Kl 13:00 Vielse i Rauland kirke</p>
                         <p><i>Antrekk: Bunad/Smoking/mørk dress</i></p>
-                        <p>15:00 Appretiff og fingermat ved Lognvik Fjellstue</p>
+                        <p>Kl 15:00 Aperitiff og fingermat ved Lognvik Fjellstue</p>
                         <p><i>Antrekk: Smoking/mørk dress</i></p>
-                        <p>17:00 Middag og fest ved Lognvik Fjellstue</p>
+                        <p>Kl 17:00 Middag og fest ved Lognvik Fjellstue</p>
                     <h3>Søndag 28. juni</h3>
-                        <p>09:00-12:00 Frokost og avreise</p>
+                        <p>Kl 09:00-12:00 Frokost på Lognvik Fjellstue</p>
                 </div>
             </div>
         )
