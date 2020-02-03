@@ -1,18 +1,12 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 class Header extends React.Component {
 
     constructor(props) {
         super(props)
-    }
-    blur(){
-        console.log("blurred");
     }
     render() {
         return (
@@ -30,7 +24,7 @@ class Header extends React.Component {
                     <Link to="/lognvik">Om Lognvik</Link>
                 </div>
                 <div className="mobile" >
-                    <Menu right disableOverlayClick onBlur={this.blur}>
+                    <Menu right>
                       <Link to="/rsvp">Kommer du?</Link>
                       <Link to="/praktisk">Praktisk info</Link>
                       <Link to="/agenda">Bryllupet</Link>
