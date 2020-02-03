@@ -11,7 +11,9 @@ class Header extends React.Component {
     constructor(props) {
         super(props)
     }
-
+    blur(){
+        console.log("blurred");
+    }
     render() {
         return (
             <div className="header">
@@ -27,8 +29,8 @@ class Header extends React.Component {
                     <Link to="/wishlist">Ønskeliste</Link>
                     <Link to="/lognvik">Om Lognvik</Link>
                 </div>
-                <div className="mobile">
-                    <Menu right>
+                <div className="mobile" >
+                    <Menu right disableOverlayClick onBlur={this.blur}>
                       <Link to="/rsvp">Kommer du?</Link>
                       <Link to="/praktisk">Praktisk info</Link>
                       <Link to="/agenda">Bryllupet</Link>
