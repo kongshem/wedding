@@ -17,7 +17,7 @@ class WishList extends React.Component {
                       store begivenheten sammen med oss!
                   </p>
                   <p>Skulle du likevel ønske å gi oss en gave på den store dagen ønsker vi
-                      oss i hovedsak bidrag til vår bryllupsreise som går til Santorini. Du kan gjerne øremerket en aktivitet eller en spesiell!
+                      oss i hovedsak bidrag til vår bryllupsreise som går til Santorini. Du kan gjerne øremerket en aktivitet eller en spesiell opplevelse!
                   </p>
 
                   <p>Vi har opprettet en egen bryllupsreise-konto med kontonummer: <i>9801.54.79760</i></p>
