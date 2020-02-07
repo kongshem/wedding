@@ -1,5 +1,5 @@
 import React from 'react';
-import Bilde from "../img/kysse.jpg";
+import Bilde from "../img/oia.jpg";
 
 class WishList extends React.Component {
 

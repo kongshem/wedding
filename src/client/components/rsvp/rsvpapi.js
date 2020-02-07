@@ -4,17 +4,29 @@ import {reset} from 'redux-form';
 export function saveRsvpDispatch(data) {
     return (dispatch) => {
         dispatch({type: actions.RSVP_STARTED});
+        var isSafari = window.safari !== undefined;
         postToSheets(data)
             .done(function (resp, textStatus, jqXHR) {
                 success(dispatch);
             })
             .fail((jqXHR, textStatus, errorThrown) => {
+              console.log("FAILED!!!!");
+              console.log(jqXHR);
+              console.log(textStatus);
+              console.log(errorThrown);
                 if (jqXHR.status === 200){
                     success(dispatch);
                 }else{
                     dispatch({type: actions.RSVP_FAILED});
                 }
+        }).complete((jqXHR) => {
         });
+        if (isSafari) {
+          console.log("Takk for at du bruker safari, din dritt!");
+          setTimeout(function(){
+            success(dispatch);
+          },1500);
+        }
 
     }
 }
@@ -35,7 +47,7 @@ function postToSheets(data){
         song_suggestions: data.song_suggestions,
     };
     return $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: post,
         contentType: 'application/json; charset=UTF-8',
         dataType: 'jsonp',

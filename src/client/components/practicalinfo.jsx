@@ -1,5 +1,7 @@
 import React from 'react';
-
+import Bilde from "../img/kysse.jpg";
+import Bilde2 from "../img/forlovelse.jpg";
+import Bilde3 from "../img/osspalognvik.jpg";
 class PracticalInfo extends React.Component {
 
     constructor(props) {
@@ -9,6 +11,11 @@ class PracticalInfo extends React.Component {
     render() {
         return (
             <div className="content2 practicalInfo">
+              <div className="bilder">
+                <img src={Bilde} id={"infoBilde"} align={"center"} />
+                <img src={Bilde2} id={"infoBilde2"} align={"center"} />
+              </div>
+              <div className={"info"}>
                 <h2>Reisevei</h2>
                 <p>Fra Oslo kjører man til Drammen, gjennom Kongsberg til Notodden og videre mot Nutheim. Ved Nutheim tar
                     man til høyre mot Rauland. Med normal trafikk tar kjøreturen ca 3 timer. Kommer du fra Tønsberg er
@@ -49,6 +56,7 @@ class PracticalInfo extends React.Component {
                     <li><p>Håndkle</p></li>
                     <li><p>Mat og drikke til grilling <b>fredag</b></p></li>
                 </ul>
+              </div>
             </div>
         )
     }

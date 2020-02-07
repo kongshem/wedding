@@ -66,14 +66,7 @@ html, body {
 .content2 {
   padding: 20px 20px 0px 20px;
 }
-.practicalInfo{
-  ul{
-    p{
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-  }
-}
+
 .whishlist{
 
   @media only screen and (min-width: 450px) {
@@ -339,27 +332,78 @@ html, body {
   }
   text-align: center;
 }
-
 .lognvik {
-  h2{
-    text-align: center;
-    //font-size: 1.7vw;
-  }
-  @media only screen and (min-width: 1200px) {
-    .paragraf {
+  @media only screen and (min-width: 450px) {
+    display: flex;
+    align-items: flex-start;
+    .bilder{
       display: flex;
-      align-items: flex-start;
-      .text{
-        margin-left: 5%;
-        margin-right: 5%;
+      flex-direction: column;
+      #lognvikBilde, #lognvikBilde2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
       }
+    }
+    .info{
+      padding: 0% 2% 0% 2%;
+      h3{
+        text-align: center;
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    #lognvikBilde2{
+      display: none;
+    }
+    #lognvikBilde{
+      width: 100%;
+      height: auto;
+    }
+    .info{
+      padding: 0% 2% 0% 2%;
+      h3{
+        text-align: center;
+      }
+    }
+  }
+}
+.practicalInfo{
+  @media only screen and (min-width: 450px) {
+    display: flex;
+    align-items: flex-start;
+    .bilder{
+      display: flex;
+      flex-direction: column;
+      #infoBilde, #infoBilde2, #infoBilde3 {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+      }
+    }
+    .info {
+      padding: 0% 2% 0% 2%;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    #infoBilde {
+      width: 100%;
+      height: auto;
+    }
+    #infoBilde2,#infoBilde3 {
+      display: none;
+    }
 
+    .info {
+      padding: 0% 2% 0% 2%;
     }
   }
 
-  #lognvik2 {
-    width: 100%;
-    max-width: 600px;
+  ul{
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -512,6 +556,14 @@ html, body {
       cursor: pointer;
       border: solid 1px #dcab2b;
 
+    }
+    @media only screen and (max-width: 450px) {
+      button{
+        font-size:4vw;
+      }
+      button:hover{
+        font-size:4.1vw;
+      }
     }
   }
 }
