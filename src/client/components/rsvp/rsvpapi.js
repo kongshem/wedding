@@ -4,12 +4,7 @@ import {reset} from 'redux-form';
 export function saveRsvpDispatch(data) {
     return (dispatch) => {
         dispatch({type: actions.RSVP_STARTED});
-        var isSafari = window.safari !== undefined;
-        var userAgent = window.navigator.userAgent;
 
-        if (!isSafari && (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))) {
-            isSafari = true;
-        }
         postToSheets(data)
             .done(function (resp, textStatus, jqXHR) {
                 success(dispatch);
@@ -26,7 +21,7 @@ export function saveRsvpDispatch(data) {
                 }
         }).complete((jqXHR) => {
         });
-        if (isSafari) {
+        if (isSafari()) {
           console.log("Takk for at du bruker safari, please bytt a!");
           setTimeout(function(){
             success(dispatch);
@@ -34,6 +29,14 @@ export function saveRsvpDispatch(data) {
         }
 
     }
+}
+function isSafari(){
+    var isSafariMac = window.safari !== undefined;
+    var ua = window.navigator.userAgent;
+    var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
+    var webkit = !!ua.match(/WebKit/i);
+    var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
+    return isSafariMac || iOSSafari;
 }
 function success(dispatch) {
     dispatch({type: actions.RSVP_SUCCESS});
