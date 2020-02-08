@@ -5,6 +5,11 @@ export function saveRsvpDispatch(data) {
     return (dispatch) => {
         dispatch({type: actions.RSVP_STARTED});
         var isSafari = window.safari !== undefined;
+        var userAgent = window.navigator.userAgent;
+
+        if (!isSafari && (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))) {
+            isSafari = true;
+        }
         postToSheets(data)
             .done(function (resp, textStatus, jqXHR) {
                 success(dispatch);
@@ -22,7 +27,7 @@ export function saveRsvpDispatch(data) {
         }).complete((jqXHR) => {
         });
         if (isSafari) {
-          console.log("Takk for at du bruker safari, din dritt!");
+          console.log("Takk for at du bruker safari, please bytt a!");
           setTimeout(function(){
             success(dispatch);
           },1500);
