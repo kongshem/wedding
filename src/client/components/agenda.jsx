@@ -16,7 +16,6 @@ class Agenda extends React.Component{
                         <p>Kl 18:00 - ut kvelden: Grilling og hygge ved Fjellstua</p>
                         <p><i>Antrekk: Sommerpent</i></p>
                     <h3>Lørdag 27. juni</h3>
-                        <p>Kl 09:00 - 10:30: Frokost på Lognvik Fjellstue</p>
                         <p>Kl 13:00 Vielse i Rauland kirke</p>
                         <p><i>Antrekk: Bunad/Smoking/mørk dress</i></p>
                         <p>Kl 15:00 Aperitiff og fingermat ved Lognvik Fjellstue</p>

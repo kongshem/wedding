@@ -28,14 +28,16 @@ class Rsvp extends React.Component {
     validateAndSubmit(values){
         if(!values.name){
             throw new SubmissionError({name: 'Mangler navn',_error: 'Feilet!'})
+        } else if (!values.phone) {
+            throw new SubmissionError({phone: 'Vi trenger ditt telefonnummer', _error: 'Feilet!'})
         } else if (!values.email) {
             throw new SubmissionError({email: 'Vi trenger din epostadresse', _error: 'Feilet!'})
         } else if(!values.email.includes('@')) {
             throw new SubmissionError({email: 'Ugyldig epostadresse', _error: 'Feilet!'})
-        }else if (!values.accomodation){
-            throw new SubmissionError({accomodation: 'Du må fortelle oss om du trenger overnatting eller ikke', _error: 'Feilet!'})
         } else if (!values.attend){
                 throw new SubmissionError({attend: 'Du må fortelle oss om du vil komme', _error: 'Feilet!'})
+        }else if (!values.accomodation){
+            throw new SubmissionError({accomodation: 'Du må fortelle oss om du trenger overnatting eller ikke', _error: 'Feilet!'})
         } else {
             this.props.submit(values);
         }
@@ -44,7 +46,6 @@ class Rsvp extends React.Component {
     render() {
         return (
             <div className="rsvp">
-
                 <div className={"center"}>
                 </div>
                 <div className={"center"}>

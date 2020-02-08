@@ -8,6 +8,14 @@ const renderField = ({ input, label, placeholder, type, meta: { touched, error }
         {touched && error && <span className={'error'}>{error}</span>}
     </div>
 );
+const renderSelectField = ({ input, type, meta: { touched, error }, children }) => (
+    <React.Fragment>
+        <select {...input}>
+            {children}
+        </select>
+        {touched && error && <span className={'error'}>{error}</span>}
+    </React.Fragment>
+)
 
 const RsvpForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
@@ -25,7 +33,7 @@ const RsvpForm = props => {
                 <div className={"right"}>
                     <label className="titleLabel">Svar</label>
                     <div className="form-group">
-                        <Field name="attend" component={"select"}>
+                        <Field name="attend" component={renderSelectField}>
                                 <option></option>
                                 <option value="fredag">Kommer fredag</option>
                                 <option value="lørdag">Kommer lørdag</option>
@@ -34,7 +42,7 @@ const RsvpForm = props => {
                     </div>
                     <label className="titleLabel">Overnatting</label>
                     <div className="form-group">
-                        <Field name="accomodation" component={"select"}>
+                        <Field name="accomodation" component={renderSelectField}>
                             <option></option>
                             <option value="JA">Ønsker overnatting</option>
                             <option value="NEI">Jeg ordner overnatting selv</option>
