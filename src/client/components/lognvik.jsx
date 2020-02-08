@@ -23,11 +23,11 @@ export default class Lognvik extends React.Component {
                     </p>
                     <p>
                         Lognvik betyr "den lugne viken" og er et paradis hele året men også en turistvirksomhet basert på natur og
-                        kultur. Der tilbringer vi mye tid sammen, går fine fjellturer på beina, lange ski-, jakt- og fisketurer. Vi to har
-                        allerede hatt mange fine opplevelser sammen på Lognvik. Når man har en så fantastisk plass som dette i
+                        kultur. Der tilbringer vi mye tid sammen, går fine fjellturer på beina, lange ski-, jakt- og fisketurer.
+                        Når man har en så fantastisk plass som dette i
                         familien, er det også veldig hyggelig å dele den sammen med sine nærmeste. Derfor blir det mange årlige
-                        venneturer til Lognvik. Vi tror Nico også trives enormt godt her opp, med all den plassen han kan boltre seg
-                        på. Det synes vi er veldig koselig.
+                        venneturer til Lognvik. Vi tror Nico også trives enormt godt her oppe, med all den plassen han kan boltre seg
+                        på. Det synes vi er veldig koselig!
                     </p>
                     <p>
                         Lognvik Søndre er en landbrukseiendom bestående av omtrent 6600 dekar landområde fordelt på dyrket
