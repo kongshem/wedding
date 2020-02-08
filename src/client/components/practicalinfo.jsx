@@ -44,11 +44,11 @@ class PracticalInfo extends React.Component {
                 <p>Vi har gleden av å tilby alle våre gjester et sted å bo på gården, eller i umiddelbar nærhet. Det er
                     7 hytter på tunet, Lognvik Fjellstue, hytta "Utsikten", hytta "Vidsyn", hytta i svingen og en hytte
                     på nabogården til Torbjørn Berge. For å gjøre det enkelt, har vi satt en pris på 200kr per person for
-                    hele oppholdet. Dette kan vippses til Kathrine eller Magnus. Husk å oppgi om du ønsker overnatting hos oss når
+                    hele oppholdet. Dette kan vippses til Kathrine (482 22 795) eller Magnus (415 65 906). Husk å oppgi om du ønsker overnatting hos oss når
                     du svarer på invitasjonen.</p>
                 <p>
-                    Det serveres enkel felles frokost på Fjellstua lørdag og søndag morgen fra kl 09:00. Dersom du har spesielle preferanser i matveien, er det fint om du tar med dette selv. Det er kjøkken på alle hyttene, så
-                    dersom du ønsker å spise frokost der, er det mulig.
+                    Det serveres enkel felles frokost på Fjellstua lørdag og søndag morgen fra kl 09:00. Dersom du har spesielle preferanser i matveien, er det fint
+                    om du tar med dette selv. Det er kjøkken på alle hyttene, dersom du ønsker å spise frokost der, er det mulig.
                 </p>
                 <h2>Pakkeliste</h2>
                 <ul>
