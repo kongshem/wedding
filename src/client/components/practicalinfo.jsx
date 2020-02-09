@@ -16,13 +16,6 @@ class PracticalInfo extends React.Component {
                 <img src={Bilde2} id={"infoBilde2"} align={"center"} />
               </div>
               <div className={"info"}>
-                <h2>Reisevei</h2>
-                <p>Fra Oslo kjører man til Drammen, gjennom Kongsberg til Notodden og videre mot Nutheim. Ved Nutheim tar
-                    man til høyre mot Rauland. Med normal trafikk tar kjøreturen ca 3 timer. Kommer du fra Tønsberg er
-                    det raskest å kjøre via Hvittingfoss til Notodden. Du kan også søke opp "Lognvik Gård og Fjellstue" på google maps, evt sett nåla på Fjellvegen 2, 3864 Rauland.</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2014.5090180738378!2d8.17945031605962!3d59.67445798178096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463f4a2614879f69%3A0xfbd766c376cd557d!2sLognvik%20G%C3%A5rd%20og%20Fjellstue%20v%2FTorstein%20Didrik%20Kongshem!5e0!3m2!1sen!2sno!4v1578219132341!5m2!1sen!2sno"
-                    width="100%" height="auto" frameBorder="0" allowFullScreen=""/>
                 <h2>Ankomst fredag</h2>
                 <p>Når du ankommer Lognvik, finner du oss på Fjellstua, så kjør gjerne rett dit. Dersom du skal bo på Lognvik,
                     får du nøkkel og informasjon om hvor du skal bo. Når du har installert deg, er du velkommen til grilling ved
@@ -50,6 +43,13 @@ class PracticalInfo extends React.Component {
                     Det serveres enkel felles frokost på Fjellstua lørdag og søndag morgen fra kl 09:00. Dersom du har spesielle preferanser i matveien, er det fint
                     om du tar med dette selv. Det er kjøkken på alle hyttene, dersom du ønsker å spise frokost der, er det mulig.
                 </p>
+                  <h2>Reisevei</h2>
+                  <p>Fra Oslo kjører man til Drammen, gjennom Kongsberg til Notodden og videre mot Nutheim. Ved Nutheim tar
+                      man til høyre mot Rauland. Med normal trafikk tar kjøreturen ca 3 timer. Kommer du fra Tønsberg er
+                      det raskest å kjøre via Hvittingfoss til Notodden. Du kan også søke opp "Lognvik Gård og Fjellstue" på google maps, evt sett nåla på Fjellvegen 2, 3864 Rauland.</p>
+                  <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2014.5090180738378!2d8.17945031605962!3d59.67445798178096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463f4a2614879f69%3A0xfbd766c376cd557d!2sLognvik%20G%C3%A5rd%20og%20Fjellstue%20v%2FTorstein%20Didrik%20Kongshem!5e0!3m2!1sen!2sno!4v1578219132341!5m2!1sen!2sno"
+                      width="100%" height="auto" frameBorder="0" allowFullScreen=""/>
                 <h2>Pakkeliste</h2>
                 <ul>
                     <li><p>Sengetøy</p></li>
