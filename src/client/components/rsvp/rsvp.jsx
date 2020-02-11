@@ -25,6 +25,21 @@ class Rsvp extends React.Component {
         super(props);
         this.validateAndSubmit = this.validateAndSubmit.bind(this);
     }
+    validateCode(code){
+        switch (code) {
+            case "120":
+            case "140":
+            case "160":
+            case "180":
+            case "220":
+            case "240":
+            case "260":
+            case "280":
+                return true;
+            default:
+                return false;
+        }
+    }
     validateAndSubmit(values){
         if(!values.name){
             throw new SubmissionError({name: 'Mangler navn',_error: 'Feilet!'})
@@ -38,6 +53,10 @@ class Rsvp extends React.Component {
                 throw new SubmissionError({attend: 'Du må fortelle oss om du vil komme', _error: 'Feilet!'})
         }else if (!values.accomodation){
             throw new SubmissionError({accomodation: 'Du må fortelle oss om du trenger overnatting eller ikke', _error: 'Feilet!'})
+        }else if (!values.code){
+            throw new SubmissionError({code: 'Du må skrive inn koden du fikk av oss', _error: 'Feilet!'})
+        }else if (!this.validateCode(values.code)){
+            throw new SubmissionError({code: 'Du har tastet inn feil kode', _error: 'Feilet!'})
         } else {
             this.props.submit(values);
         }

@@ -62,6 +62,10 @@ const RsvpForm = props => {
                     <Field name="song_suggestions" component="textarea" />
                 </div>
             </div>
+            <div className={"all"}>
+                <label className="titleLabel">Kode</label>
+                <Field name="code" component={renderField} type="text" placeholder="Kode"/>
+            </div>
             <div className="form-group">
                 <button type="submit" disabled={pristine || submitting}>
                     {!props.uploading &&

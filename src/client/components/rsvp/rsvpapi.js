@@ -4,22 +4,16 @@ import {reset} from 'redux-form';
 export function saveRsvpDispatch(data) {
     return (dispatch) => {
         dispatch({type: actions.RSVP_STARTED});
-
         postToSheets(data)
-            .done(function (resp, textStatus, jqXHR) {
+            .done(function () {
                 success(dispatch);
             })
-            .fail((jqXHR, textStatus, errorThrown) => {
-              console.log("FAILED!!!!");
-              console.log(jqXHR);
-              console.log(textStatus);
-              console.log(errorThrown);
+            .fail((jqXHR) => {
                 if (jqXHR.status === 200){
                     success(dispatch);
                 }else{
                     dispatch({type: actions.RSVP_FAILED});
                 }
-        }).complete((jqXHR) => {
         });
         if (isSafari()) {
           console.log("Takk for at du bruker safari, please bytt a!");
@@ -53,6 +47,7 @@ function postToSheets(data){
         accomodation: data.accomodation,
         allergies: data.allergies,
         song_suggestions: data.song_suggestions,
+        code: data.code,
     };
     return $.ajax({
         type: 'POST',
