@@ -16,6 +16,7 @@ const renderSelectField = ({ input, type, meta: { touched, error }, children }) 
         {touched && error && <span className={'error'}>{error}</span>}
     </React.Fragment>
 )
+const required = <span className="obligatorisk">*</span>
 
 const RsvpForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
@@ -23,15 +24,15 @@ const RsvpForm = props => {
         <form onSubmit={handleSubmit} className={"theform"}>
             <div className={"rsvp-form"}>
                 <div className={"left"}>
-                    <label className="titleLabel">Fullt navn</label>
+                    <label className="titleLabel">{required}Fullt navn</label>
                     <Field name="name" component={renderField} type="text" placeholder="Fullt navn" />
-                    <label className="titleLabel">Tlf</label>
+                    <label className="titleLabel">{required}Tlf</label>
                     <Field name="phone" component={renderField} type="text" placeholder="Tlf" />
-                    <label className="titleLabel">E-post</label>
+                    <label className="titleLabel">{required}E-post</label>
                     <Field name="email" component={renderField} type="text" placeholder="E-post"/>
                 </div>
                 <div className={"right"}>
-                    <label className="titleLabel">Svar</label>
+                    <label className="titleLabel">{required}Svar</label>
                     <div className="form-group">
                         <Field name="attend" component={renderSelectField}>
                                 <option></option>
@@ -40,7 +41,7 @@ const RsvpForm = props => {
                                 <option value="ikke">Kan dessverre ikke komme</option>
                         </Field>
                     </div>
-                    <label className="titleLabel">Overnatting</label>
+                    <label className="titleLabel">{required}Overnatting</label>
                     <div className="form-group">
                         <Field name="accomodation" component={renderSelectField}>
                             <option></option>
@@ -57,13 +58,13 @@ const RsvpForm = props => {
                 </div>
             </div>
             <div className={"all"}>
-                <label className="titleLabel textLabel">Hvilken sang danser du best til?</label>
+                <label className="titleLabel textLabel">Hvilke sanger danser du best til?</label>
                 <div className="form-group">
                     <Field name="song_suggestions" component="textarea" />
                 </div>
             </div>
             <div className={"all"}>
-                <label className="titleLabel">Kode</label>
+                <label className="titleLabel">{required}Kode du har fått av oss på sms</label>
                 <Field name="code" component={renderField} type="text" placeholder="Kode"/>
             </div>
             <div className="form-group">

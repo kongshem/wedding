@@ -22,7 +22,7 @@ export default class Lognvik extends React.Component {
                         dag er det foreldrene til Magnus som eier og driver gården.
                     </p>
                     <p>
-                        Lognvik betyr "den lugne viken" og er et paradis hele året men også en turistvirksomhet basert på natur og
+                        Lognvik betyr "den lugne viken" og er et paradis hele året, men også en turistvirksomhet basert på natur og
                         kultur. Der tilbringer vi mye tid sammen, går fine fjellturer på beina, lange ski-, jakt- og fisketurer.
                         Når man har en så fantastisk plass som dette i
                         familien, er det også veldig hyggelig å dele den sammen med sine nærmeste. Derfor blir det mange årlige
@@ -43,7 +43,7 @@ export default class Lognvik extends React.Component {
                         Åmotsdal. I sin tid sov folkefortelleren Jørgen Moe i en av himmelsengene i Yvistoga på Storstua. I dag heter
                         den Mo-senga :)
                     </p>
-                    <p>Dersom du ønsker å lese mer, se <a href="https://no.wikipedia.org/wiki/Lognvik_g%C3%A5rd">her</a></p>
+                    <p>Dersom du ønsker å lese mer om Lognvik, se <a href="https://no.wikipedia.org/wiki/Lognvik_g%C3%A5rd">her</a>.</p>
                 </div>
             </div>
         )

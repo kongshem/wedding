@@ -22,7 +22,7 @@ class WishList extends React.Component {
 
                   <p>Vi har opprettet en egen bryllupsreise-konto med kontonummer: <i>9801.54.79760</i></p>
 
-                  <p>Vi har også opprettet ønskeliste hos <a href="https://bryllupsliste.cg.no/weddinglist/view/index/id/JfvM7wRSeRDRvHLZfRMYNexIHeeijcTb/"><i>Christiania Glassmagasin</i></a></p>
+                  <p>Vi har også opprettet ønskeliste hos <a href="https://bryllupsliste.cg.no/weddinglist/view/index/id/JfvM7wRSeRDRvHLZfRMYNexIHeeijcTb/"><i>Christiania Glassmagasin</i></a> og <a href="https://jernia.no/wishlist/e052d955-6537-464d-9f8b-784170be18e5"><i>Jernia</i></a></p>
               </div>
           </div>
       )
