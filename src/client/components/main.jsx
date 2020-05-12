@@ -15,10 +15,10 @@ export default class Main extends React.Component {
                         helgen 26-28. juni med deg!
                     </p>
                     <p className="corona">
-                        Selv ikke Covid-19 skal få stoppe oss i å feire kjærligheten, det blir bryllup! Vi har måttet gjøre
-                        mange tilpassninger for å sørge for at vi følger reglene til myndighetene, mer detaljert informasjon
-                        vil komme på <Link className="inline-link" to="/praktisk"><i>praktisk
-                        informasjon.</i></Link>
+                        Vi står nå i en vanskelig situasjon mtp Covid-19.
+                        Vi velger å ha is i magen og gjør ingen endringer for øyeblikket,
+                        men vi utvider svarfristen til 1. Mai. Vi følger situasjonen tett og vil fatte en
+                        beslutning innen 15. mai.
                     </p>
                     <p>Vi ønsker å samle familie og gode venner til en bryllupshelg på Lognvik. Vi ser for oss en
                         uformell fest fredag ettermiddag og kveld, en fin vielse i Rauland kirke med påfølgende
