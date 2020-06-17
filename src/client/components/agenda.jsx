@@ -22,7 +22,7 @@ class Agenda extends React.Component{
                         <p><i>Antrekk: Smoking/mørk dress</i></p>
                         <p>Kl 17:00: Middag og fest ved Lognvik Fjellstue</p>
                     <h3>Søndag 28. juni</h3>
-                        <p>Kl 09:00-12:00: Frokost på Lognvik Fjellstue</p>
+                        <p>Kl 09:00-12:00: Frokost og avreise</p>
                 </div>
             </div>
         )
